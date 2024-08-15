@@ -126,7 +126,7 @@ const GuestForm: React.FC = () => {
       return;
     }
 
-    axios.post('http://localhost:5000/api/update-guest', {
+    axios.post('https://wedding-ana-geovanni-b138bab42d04.herokuapp.com/api/update-guest', {
       name: selectedName,
       tickets,
       telephone,
