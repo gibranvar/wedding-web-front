@@ -25,7 +25,7 @@ const GuestForm: React.FC = () => {
   const [notFoundMessage, setNotFoundMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    axios.get('https://wedding-ana-geovanni-b138bab42d04.herokuapp.com')
+    axios.get('https://wedding-ana-geovanni-b138bab42d04.herokuapp.com/api/guests')
       .then(response => {
         setGuests(response.data);
         if (selectedName) {
