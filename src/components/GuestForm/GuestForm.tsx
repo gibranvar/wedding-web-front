@@ -86,7 +86,7 @@ const GuestForm: React.FC = () => {
   const handleTicketChange = (delta: number) => {
     setTickets(prevTickets => {
       const newTickets = prevTickets + delta;
-      if (newTickets < 1) return 1;
+      if (newTickets < 0) return 0;
       if (newTickets > maxTickets) return maxTickets;
       return newTickets;
     });
@@ -217,6 +217,7 @@ const GuestForm: React.FC = () => {
         <div className='button-container inputs-container'>
           <button className='button-send' type="submit">ENVIAR</button>
           {error && <p className='error-message'>{error}</p>}
+          <p className='ad-message'>CUALQUIER MODIFICACIÓN DEBE CONTACTAR AL ORGANIZADOR DEL EVENTO*</p>
         </div>
       </form>
     </div>

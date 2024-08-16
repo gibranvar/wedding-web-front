@@ -44,11 +44,13 @@ const RsvpSectionSubtitle = styled.p`
     position: relative;
 `
 const RsvpSectionDescription= styled.p`
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-size: 15px;
-    font-weight: 150;
+    font-weight: 200;
     z-index: 2;
     position: relative;
+    white-space: pre-wrap;
+    text-align: justify;
     strong{
         font-weight: bold;
         text-decoration: underline;
@@ -85,8 +87,8 @@ const RsvpSection: React.FC<RsvpSectionProps> = ({
              <Overlay/>
             <RsvpSectionTitle className="title-rsvp">{title}</RsvpSectionTitle>
             <RsvpSectionSubtitle>¡Queremos compartir este momento tan esperado contigo! <br />
-            <span>Por favor ayúdanos confirmando tu asistencia.</span>  </RsvpSectionSubtitle>
-            <RsvpSectionDescription>Instrucciones: Escribe las <strong>primeras 3 letras</strong> de tu nombre y da clic en la sugerencia que aparecerá desplegada. Posteriormente puedes <em>mantener o reducir</em> la cantidad de invitados que asistirán contigo. Captura todos los campos antes de dar clic en "ENVIAR"'</RsvpSectionDescription>
+            <span>Por favor ayúdanos confirmando tu asistencia antes del <strong>1 Marzo de 2025.</strong></span>  </RsvpSectionSubtitle>
+            <RsvpSectionDescription><br />Escribe las <strong>primeras 3 letras</strong> de tu nombre y da clic en la sugerencia que aparecerá desplegada. Si  te asignaron boletos para acompañantes, el número se completará automáticamente. Puedes <em>mantener o reducir</em> la cantidad de invitados que asistirán contigo (ajusta esta cantidad a 0 si prefieres no llevar acompañantes). Antes de dar clic en "ENVIAR", verifica que todo este correcto, ya que una vez enviado no se podrá modificar. </RsvpSectionDescription>
             <FormContainer>
                 <GuestForm/>
             </FormContainer>
