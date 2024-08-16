@@ -80,6 +80,14 @@ color: white;
   .title-calendar{
     max-width: 45%;
   }
+  .title-timer-container{
+    margin: 20px 20vw 0 20vw !important;
+  }
+  .title-timer{
+    line-height: 5vw !important;
+    font-size: 5vw !important;
+
+  }
 }
 
 
@@ -102,6 +110,13 @@ color: white;
 .title-calendar{
   max-width: 25%;
 }
+.title-timer-container{
+  margin: 20px 35vw 0 35vw !important;
+}
+.title-timer{
+  line-height: 2.8vw !important;
+  font-size: 2.5vw !important;
+}
 }
 
 .slide-out-top {
@@ -119,4 +134,12 @@ animation: slide-out-top 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
   opacity: 0;
 }
 }
-
+.title-timer-container{
+  margin: 20px 25vw 0 25vw;
+}
+.title-timer{
+  font-family: 'Cormorant Garamond',serif;
+  line-height: 4vw;
+  font-size: 3.5vw;
+  font-weight: 100;
+}

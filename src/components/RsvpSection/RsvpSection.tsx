@@ -86,7 +86,7 @@ const RsvpSection: React.FC<RsvpSectionProps> = ({
             <RsvpSectionTitle className="title-rsvp">{title}</RsvpSectionTitle>
             <RsvpSectionSubtitle>¡Queremos compartir este momento tan esperado contigo! <br />
             <span>Por favor ayúdanos confirmando tu asistencia.</span>  </RsvpSectionSubtitle>
-            <RsvpSectionDescription>Instrucciones: Escribe las <strong>primeras 3 letras</strong> de tu nombre y da clic en la sugerencia que aparecerá desplegada. Posteriormente puedes <em>mantener o reducir</em> la cantidad de invitados que asistirán (incluyéndote). Captura todos los campos antes de dar clic en "ENVIAR"'</RsvpSectionDescription>
+            <RsvpSectionDescription>Instrucciones: Escribe las <strong>primeras 3 letras</strong> de tu nombre y da clic en la sugerencia que aparecerá desplegada. Posteriormente puedes <em>mantener o reducir</em> la cantidad de invitados que asistirán contigo. Captura todos los campos antes de dar clic en "ENVIAR"'</RsvpSectionDescription>
             <FormContainer>
                 <GuestForm/>
             </FormContainer>

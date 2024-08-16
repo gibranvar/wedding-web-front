@@ -71,7 +71,7 @@ const Subtitle = styled.h2`
     font-size: 20px;
   }
   @media (max-width: ${breakpoints.xs}) {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
 `
@@ -110,7 +110,7 @@ const CalendarSection: React.FC<CalendarSectionProps> = ({
           <Subtitle>Sábado 5 de Abril, 2025</Subtitle>
         </CalendarSubtitle>
         <CalendarSectionTimer>
-          <Countdown targetDate="2025-04-05T14:25:00" />
+          <Countdown targetDate="2025-04-05T17:00:00" />
         </CalendarSectionTimer>
         <CalendarSectionButtonContainer>
           <ICalendarButton event={eventDetails} buttonText={buttonText} />

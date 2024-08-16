@@ -61,7 +61,10 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <CountdownWrapper>
-      {timerComponents.length ? timerComponents : <span>¡Ya llegó el evento!</span>}
+      {timerComponents.length ? timerComponents : 
+      <div className='title-timer-container'>
+        <p className='title-timer'>¡NUESTRO GRAN DÍA HA LLEGADO!</p>
+      </div>}
     </CountdownWrapper>
   );
 };
