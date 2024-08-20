@@ -4,7 +4,7 @@ import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './views/Home/Home';
 import './App.css';
 import LoadingView from './views/Loading/Loading';
-import GuestsTable from './views/Guests/GuestTable'
+import GuestTable from './views/Guests/GuestTable'
 
 const App: React.FC = () => {
   return (
