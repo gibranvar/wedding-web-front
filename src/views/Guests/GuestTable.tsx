@@ -16,7 +16,7 @@ const GuestTable: React.FC = () => {
   const [filter, setFilter] = useState<'all' | 'attending' | 'notAttending'>('all');
 
   useEffect(() => {
-    axios.get('https://wedding-ana-geovanni-b138bab42d04.herokuapp.com/api/guests')
+    axios.get('https://web-production-8d2b.up.railway.app/api/guests')
       .then(response => {
         setGuests(response.data);
       })
