@@ -25,7 +25,7 @@ const GuestForm: React.FC = () => {
   const [notFoundMessage, setNotFoundMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    axios.get('https://wedding-ana-geovanni-b138bab42d04.herokuapp.com/api/guests')
+    axios.get('https://web-production-8d2b.up.railway.app/api/guests')
       .then(response => {
         setGuests(response.data);
         if (selectedName) {
@@ -126,7 +126,7 @@ const GuestForm: React.FC = () => {
       return;
     }
 
-    axios.post('https://wedding-ana-geovanni-b138bab42d04.herokuapp.com/api/update-guest', {
+    axios.post('https://web-production-8d2b.up.railway.app/api/update-guest', {
       name: selectedName,
       tickets,
       telephone,
